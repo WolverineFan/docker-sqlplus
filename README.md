@@ -22,8 +22,11 @@ From the top level directory of this repo:
 
 `./sqlplus {connectstring}`
 
-Example
+**NOTE:** If you need custom DNS, you will need to edit the sqlplus shell script to pass `-dns={yourdnsIP}` to the docker run command. (put that *before* the sqlplus argument on that line)
 
+
+Example run:
+------------
 ```bash
 ./sqlplus username/password@db.mydomain.com:1521/SOMESCHEMA
 sqlplus username/password@db.mydomain.com:1521/SOMESCHEMA
@@ -38,6 +41,6 @@ Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
 With the Partitioning, Real Application Clusters, OLAP, Data Mining
 and Real Application Testing options
 
-SQL>```
+SQL>
+```
 
-**NOTE:** If you need custom DNS, you will need to edit the sqlplus shell script to pass `-dns={yourdnsIP}` to the docker run command. (put that *before* the sqlplus argument on that line)
