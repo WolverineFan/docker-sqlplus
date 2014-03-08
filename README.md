@@ -39,3 +39,5 @@ With the Partitioning, Real Application Clusters, OLAP, Data Mining
 and Real Application Testing options
 
 SQL>```
+
+**NOTE:** If you need custom DNS, you will need to edit the sqlplus shell script to pass `-dns={yourdnsIP}` to the docker run command. (put that *before* the sqlplus argument on that line)
